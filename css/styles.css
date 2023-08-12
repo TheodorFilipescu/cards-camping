@@ -1,0 +1,262 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #d010e9;
+}
+
+::selection {
+  color: #fff;
+  background: #d010e9;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+  background: #fffeff;        /* color of the tracking area */
+  
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color: #d010e9;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+  background-color: #dd27f5;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+
+/***************/
+
+/* font-family: 'Staatliches', cursive; */
+
+/***************/
+
+.container-t {
+  height: 100vh;  
+  background-image: url('../images/back-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-backd {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-card-total {
+  height: 500px;
+  width: 100%;
+/*   background-color: rebeccapurple; */
+}
+
+.container-card {
+  height: 100%;
+  max-width: 1550px;
+  width: 100%;
+/*   background-color: red; */
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-card-elemente {
+  height: 100%;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+}
+
+.container-card-el-1 {
+  height: 100%;
+  width: 400px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-card-el-1-div {
+  background-color: #d010e9;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px #d010e9;
+}
+
+.container-card-el-1-img-asp {
+  height: 100px;
+  width: 150px;
+  pointer-events: none;
+}
+
+.container-card-el-2 {
+  position: absolute;
+  z-index: 2;
+}
+
+.container-card-el-3 {
+  position: absolute;
+  z-index: 2;
+}
+
+.container-card-el-2-img-asp {
+  height: auto;
+  width: 400px;
+  pointer-events: none;
+}
+
+.container-card-el-2-img-asp2 {
+  height: auto;
+  width: 400px;
+  pointer-events: none;
+  transform: scaleX(-1);
+}
+
+
+.inclinat-dreapta {
+  animation-name: inclinat-dreapta;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes inclinat-dreapta {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(150px);
+    rotate: 10deg;
+  }
+}
+
+.inclinat-dreapta2 {
+  animation-name: inclinat-dreapta2;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes inclinat-dreapta2 {
+  0% {
+    opacity: 1;
+    transform: translateX(150px);
+    rotate: 10deg;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.inclinat-stanga {
+  animation-name: inclinat-stanga;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes inclinat-stanga {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-150px);
+    rotate: -10deg;
+  }
+}
+
+.inclinat-stanga2 {
+  animation-name: inclinat-stanga2;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes inclinat-stanga2 {
+  0% {
+    opacity: 1;
+    transform: translateX(-150px);
+    rotate: -10deg;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container-card-el-1-h2-asp {
+  color: #333;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container-card-el-1-p-asp {
+  font-size: 18px;
+  text-align: center;
+}
+
+.container-card-el-1-a-asp {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d010e9;
+  color: #d010e9;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.container-card-el-1-a-asp:hover {
+  background-color: #d010e9;
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px #d010e9;
+}
+
+
+
+
+
+
+
